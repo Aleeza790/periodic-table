@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periodic Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .periodic-table {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr); /* 10 columns */
+            gap: 10px;
+            justify-items: center;
+        }
+
+        .element {
+            width: 70px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-5">
+
+    <div class="periodic-table">
+        <!-- Elements 1-30 -->
+        <div class="element bg-red-500 text-white">
+            <span class="text-xs opacity-50">1</span>
+            <span class="text-lg font-bold">H</span>
+            <span class="text-sm">Hydrogen</span>
+        </div>
+        <div class="element bg-blue-500 text-white">
+            <span class="text-xs opacity-50">2</span>
+            <span class="text-lg font-bold">He</span>
+            <span class="text-sm">Helium</span>
+        </div>
+        <div class="element bg-green-500 text-white">
+            <span class="text-xs opacity-50">3</span>
+            <span class="text-lg font-bold">Li</span>
+            <span class="text-sm">Lithium</span>
+        </div>
+        <div class="element bg-yellow-500 text-white">
+            <span class="text-xs opacity-50">4</span>
+            <span class="text-lg font-bold">Be</span>
+            <span class="text-sm">Beryllium</span>
+        </div>
+        <div class="element bg-orange-500 text-white">
+            <span class="text-xs opacity-50">5</span>
+            <span class="text-lg font-bold">B</span>
+            <span class="text-sm">Boron</span>
+        </div>
+        <div class="element bg-purple-500 text-white">
+            <span class="text-xs opacity-50">6</span>
+            <span class="text-lg font-bold">C</span>
+            <span class="text-sm">Carbon</span>
+        </div>
+        <div class="element bg-teal-500 text-white">
+            <span class="text-xs opacity-50">7</span>
+            <span class="text-lg font-bold">N</span>
+            <span class="text-sm">Nitrogen</span>
+        </div>
+        <div class="element bg-pink-500 text-white">
+            <span class="text-xs opacity-50">8</span>
+            <span class="text-lg font-bold">O</span>
+            <span class="text-sm">Oxygen</span>
+        </div>
+        <div class="element bg-cyan-500 text-white">
+            <span class="text-xs opacity-50">9</span>
+            <span class="text-lg font-bold">F</span>
+            <span class="text-sm">Fluorine</span>
+        </div>
+        <div class="element bg-lime-500 text-white">
+            <span class="text-xs opacity-50">10</span>
+            <span class="text-lg font-bold">Ne</span>
+            <span class="text-sm">Neon</span>
+        </div>
+        <div class="element bg-red-600 text-white">
+            <span class="text-xs opacity-50">11</span>
+            <span class="text-lg font-bold">Na</span>
+            <span class="text-sm">Sodium</span>
+        </div>
+        <div class="element bg-blue-600 text-white">
+            <span class="text-xs opacity-50">12</span>
+            <span class="text-lg font-bold">Mg</span>
+            <span class="text-sm">Magnesium</span>
+        </div>
+        <div class="element bg-green-600 text-white">
+            <span class="text-xs opacity-50">13</span>
+            <span class="text-lg font-bold">Al</span>
+            <span class="text-sm">Aluminum</span>
+        </div>
+        <div class="element bg-yellow-600 text-white">
+            <span class="text-xs opacity-50">14</span>
+            <span class="text-lg font-bold">Si</span>
+            <span class="text-sm">Silicon</span>
+        </div>
+        <div class="element bg-orange-600 text-white">
+            <span class="text-xs opacity-50">15</span>
+            <span class="text-lg font-bold">P</span>
+            <span class="text-sm">Phosphorus</span>
+        </div>
+        <div class="element bg-purple-600 text-white">
+            <span class="text-xs opacity-50">16</span>
+            <span class="text-lg font-bold">S</span>
+            <span class="text-sm">Sulfur</span>
+        </div>
+        <div class="element bg-teal-600 text-white">
+            <span class="text-xs opacity-50">17</span>
+            <span class="text-lg font-bold">Cl</span>
+            <span class="text-sm">Chlorine</span>
+        </div>
+        <div class="element bg-pink-600 text-white">
+            <span class="text-xs opacity-50">18</span>
+            <span class="text-lg font-bold">Ar</span>
+            <span class="text-sm">Argon</span>
+        </div>
+        <div class="element bg-cyan-600 text-white">
+            <span class="text-xs opacity-50">19</span>
+            <span class="text-lg font-bold">K</span>
+            <span class="text-sm">Potassium</span>
+        </div>
+        <div class="element bg-lime-600 text-white">
+            <span class="text-xs opacity-50">20</span>
+            <span class="text-lg font-bold">Ca</span>
+            <span class="text-sm">Calcium</span>
+        </div>
+        <div class="element bg-red-700 text-white">
+            <span class="text-xs opacity-50">21</span>
+            <span class="text-lg font-bold">Sc</span>
+            <span class="text-sm">Scandium</span>
+        </div>
+        <div class="element bg-blue-700 text-white">
+            <span class="text-xs opacity-50">22</span>
+            <span class="text-lg font-bold">Ti</span>
+            <span class="text-sm">Titanium</span>
+        </div>
+        <div class="element bg-green-700 text-white">
+            <span class="text-xs opacity-50">23</span>
+            <span class="text-lg font-bold">V</span>
+            <span class="text-sm">Vanadium</span>
+        </div>
+        <div class="element bg-yellow-700 text-white">
+            <span class="text-xs opacity-50">24</span>
+            <span class="text-lg font-bold">Cr</span>
+            <span class="text-sm">Chromium</span>
+        </div>
+        <div class="element bg-orange-700 text-white">
+            <span class="text-xs opacity-50">25</span>
+            <span class="text-lg font-bold">Mn</span>
+            <span class="text-sm">Manganese</span>
+        </div>
+        <div class="element bg-purple-700 text-white">
+            <span class="text-xs opacity-50">26</span>
+            <span class="text-lg font-bold">Fe</span>
+            <span class="text-sm">Iron</span>
+        </div>
+        <div class="element bg-teal-700 text-white">
+            <span class="text-xs opacity-50">27</span>
+            <span class="text-lg font-bold">Co</span>
+            <span class="text-sm">Cobalt</span>
+        </div>
+        <div class="element bg-pink-700 text-white">
+            <span class="text-xs opacity-50">28</span>
+            <span class="text-lg font-bold">Ni</span>
+            <span class="text-sm">Nickel</span>
+        </div>
+        <div class="element bg-cyan-700 text-white">
+            <span class="text-xs opacity-50">29</span>
+            <span class="text-lg font-bold">Cu</span>
+            <span class="text-sm">Copper</span>
+        </div>
+        <div class="element bg-lime-700 text-white">
+            <span class="text-xs opacity-50">30</span>
+            <span class="text-lg font-bold">Zn</span>
+            <span class="text-sm">Zinc</span>
+        </div>
+
+        <!-- Elements 31-60 -->
+        <div class="element bg-red-800 text-white">
+            <span class="element-number">31</span>
+            <span class="element-symbol">Ga</span>
+            <span class="element-name">Gallium</span>
+        </div>
+        <div class="element bg-blue-800 text-white">
+            <span class="element-number">32</span>
+            <span class="element-symbol">Ge</span>
+            <span class="element-name">Germanium</span>
+        </div>
+        <div class="element bg-green-800 text-white">
+            <span class="element-number">33</span>
+            <span class="element-symbol">As</span>
+            <span class="element-name">Arsenic</span>
+        </div>
+        <div class="element bg-yellow-800 text-white">
+            <span class="element-number">34</span>
+            <span class="element-symbol">Se</span>
+            <span class="element-name">Selenium</span>
+        </div>
+        <div class="element bg-orange-800 text-white">
+            <span class="element-number">35</span>
+            <span class="element-symbol">Br</span>
+            <span class="element-name">Bromine</span>
+        </div>
+        <div class="element bg-purple-800 text-white">
+            <span class="element-number">36</span>
+            <span class="element-symbol">Kr</span>
+            <span class="element-name">Krypton</span>
+        </div>
+        <div class="element bg-teal-800 text-white">
+            <span class="element-number">37</span>
+            <span class="element-symbol">Rb</span>
+            <span class="element-name">Rubidium</span>
+        </div>
+        <div class="element bg-pink-800 text-white">
+            <span class="element-number">38</span>
+            <span class="element-symbol">Sr</span>
+            <span class="element-name">Strontium</span>
+        </div>
+        <div class="element bg-cyan-800 text-white">
+            <span class="element-number">39</span>
+            <span class="element-symbol">Y</span>
+            <span class="element-name">Yttrium</span>
+        </div>
+        <div class="element bg-lime-800 text-white">
+            <span class="element-number">40</span>
+            <span class="element-symbol">Zr</span>
+            <span class="element-name">Zirconium</span>
+        </div>
+        <div class="element bg-red-900 text-white">
+            <span class="element-number">41</span>
+            <span class="element-symbol">Nb</span>
+            <span class="element-name">Niobium</span>
+        </div>
+        <div class="element bg-blue-900 text-white">
+            <span class="element-number">42</span>
+            <span class="element-symbol">Mo</span>
+            <span class="element-name">Molybdenum</span>
+        </div>
+        <div class="element bg-green-900 text-white">
+            <span class="element-number">43</span>
+            <span class="element-symbol">Tc</span>
+            <span class="element-name">Technetium</span>
+        </div>
+        <div class="element bg-yellow-900 text-white">
+            <span class="element-number">44</span>
+            <span class="element-symbol">Ru</span>
+            <span class="element-name">Ruthenium</span>
+        </div>
+        <div class="element bg-orange-900 text-white">
+            <span class="element-number">45</span>
+            <span class="element-symbol">Rh</span>
+            <span class="element-name">Rhodium</span>
+        </div>
+        <div class="element bg-purple-900 text-white">
+            <span class="element-number">46</span>
+            <span class="element-symbol">Pd</span>
+            <span class="element-name">Palladium</span>
+        </div>
+        <div class="element bg-teal-900 text-white">
+            <span class="element-number">47</span>
+            <span class="element-symbol">Ag</span>
+            <span class="element-name">Silver</span>
+        </div>
+        <div class="element bg-pink-900 text-white">
+            <span class="element-number">48</span>
+            <span class="element-symbol">Cd</span>
+            <span class="element-name">Cadmium</span>
+        </div>
+        <div class="element bg-cyan-900 text-white">
+            <span class="element-number">49</span>
+            <span class="element-symbol">In</span>
+            <span class="element-name">Indium</span>
+        </div>
+        <div class="element bg-lime-900 text-white">
+            <span class="element-number">50</span>
+            <span class="element-symbol">Sn</span>
+            <span class="element-name">Tin</span>
+        </div>
+
+        <!-- Elements 51 to 60 -->
+        <div class="element bg-red-700 text-white">
+            <span class="element-number">51</span>
+            <span class="element-symbol">Sb</span>
+            <span class="element-name">Antimony</span>
+        </div>
+        <div class="element bg-blue-700 text-white">
+            <span class="element-number">52</span>
+            <span class="element-symbol">I</span>
+            <span class="element-name">Iodine</span>
+        </div>
+        <div class="element bg-green-700 text-white">
+            <span class="element-number">53</span>
+            <span class="element-symbol">Xe</span>
+            <span class="element-name">Xenon</span>
+        </div>
+        <div class="element bg-yellow-700 text-white">
+            <span class="element-number">54</span>
+            <span class="element-symbol">Cs</span>
+            <span class="element-name">Caesium</span>
+        </div>
+        <div class="element bg-orange-700 text-white">
+            <span class="element-number">55</span>
+            <span class="element-symbol">Ba</span>
+            <span class="element-name">Barium</span>
+        </div>
+        <div class="element bg-purple-700 text-white">
+            <span class="element-number">56</span>
+            <span class="element-symbol">La</span>
+            <span class="element-name">Lanthanum</span>
+        </div>
+        <div class="element bg-teal-700 text-white">
+            <span class="element-number">57</span>
+            <span class="element-symbol">Ce</span>
+            <span class="element-name">Cerium</span>
+        </div>
+        <div class="element bg-pink-700 text-white">
+            <span class="element-number">58</span>
+            <span class="element-symbol">Pr</span>
+            <span class="element-name">Praseodymium</span>
+        </div>
+        <div class="element bg-cyan-700 text-white">
+            <span class="element-number">59</span>
+            <span class="element-symbol">Nd</span>
+            <span class="element-name">Neodymium</span>
+        </div>
+        <div class="element bg-lime-700 text-white">
+            <span class="element-number">60</span>
+            <span class="element-symbol">Pm</span>
+            <span class="element-name">Promethium</span>
+        </div>
+        <!-- Elements 61 to 90 -->
+<div class="element bg-red-800 text-white">
+    <span class="text-xs opacity-50">61</span>
+    <span class="text-lg font-bold">Pm</span>
+    <span class="text-sm">Promethium</span>
+</div>
+<div class="element bg-blue-800 text-white">
+    <span class="text-xs opacity-50">62</span>
+    <span class="text-lg font-bold">Sm</span>
+    <span class="text-sm">Samarium</span>
+</div>
+<div class="element bg-green-800 text-white">
+    <span class="text-xs opacity-50">63</span>
+    <span class="text-lg font-bold">Eu</span>
+    <span class="text-sm">Europium</span>
+</div>
+<div class="element bg-yellow-800 text-white">
+    <span class="text-xs opacity-50">64</span>
+    <span class="text-lg font-bold">Gd</span>
+    <span class="text-sm">Gadolinium</span>
+</div>
+<div class="element bg-orange-800 text-white">
+    <span class="text-xs opacity-50">65</span>
+    <span class="text-lg font-bold">Tb</span>
+    <span class="text-sm">Terbium</span>
+</div>
+<div class="element bg-purple-800 text-white">
+    <span class="text-xs opacity-50">66</span>
+    <span class="text-lg font-bold">Dy</span>
+    <span class="text-sm">Dysprosium</span>
+</div>
+<div class="element bg-teal-800 text-white">
+    <span class="text-xs opacity-50">67</span>
+    <span class="text-lg font-bold">Ho</span>
+    <span class="text-sm">Holmium</span>
+</div>
+<div class="element bg-pink-800 text-white">
+    <span class="text-xs opacity-50">68</span>
+    <span class="text-lg font-bold">Er</span>
+    <span class="text-sm">Erbium</span>
+</div>
+<div class="element bg-cyan-800 text-white">
+    <span class="text-xs opacity-50">69</span>
+    <span class="text-lg font-bold">Tm</span>
+    <span class="text-sm">Thulium</span>
+</div>
+<div class="element bg-lime-800 text-white">
+    <span class="text-xs opacity-50">70</span>
+    <span class="text-lg font-bold">Yb</span>
+    <span class="text-sm">Ytterbium</span>
+</div>
+<div class="element bg-red-900 text-white">
+    <span class="text-xs opacity-50">71</span>
+    <span class="text-lg font-bold">Lu</span>
+    <span class="text-sm">Lutetium</span>
+</div>
+<div class="element bg-blue-900 text-white">
+    <span class="text-xs opacity-50">72</span>
+    <span class="text-lg font-bold">Hf</span>
+    <span class="text-sm">Hafnium</span>
+</div>
+<div class="element bg-green-900 text-white">
+    <span class="text-xs opacity-50">73</span>
+    <span class="text-lg font-bold">Ta</span>
+    <span class="text-sm">Tantalum</span>
+</div>
+<div class="element bg-yellow-900 text-white">
+    <span class="text-xs opacity-50">74</span>
+    <span class="text-lg font-bold">W</span>
+    <span class="text-sm">Tungsten</span>
+</div>
+<div class="element bg-orange-900 text-white">
+    <span class="text-xs opacity-50">75</span>
+    <span class="text-lg font-bold">Re</span>
+    <span class="text-sm">Rhenium</span>
+</div>
+<div class="element bg-purple-900 text-white">
+    <span class="text-xs opacity-50">76</span>
+    <span class="text-lg font-bold">Os</span>
+    <span class="text-sm">Osmium</span>
+</div>
+<div class="element bg-teal-900 text-white">
+    <span class="text-xs opacity-50">77</span>
+    <span class="text-lg font-bold">Ir</span>
+    <span class="text-sm">Iridium</span>
+</div>
+<div class="element bg-pink-900 text-white">
+    <span class="text-xs opacity-50">78</span>
+    <span class="text-lg font-bold">Pt</span>
+    <span class="text-sm">Platinum</span>
+</div>
+<div class="element bg-cyan-900 text-white">
+    <span class="text-xs opacity-50">79</span>
+    <span class="text-lg font-bold">Au</span>
+    <span class="text-sm">Gold</span>
+</div>
+<div class="element bg-lime-900 text-white">
+    <span class="text-xs opacity-50">80</span>
+    <span class="text-lg font-bold">Hg</span>
+    <span class="text-sm">Mercury</span>
+</div>
+<div class="element bg-red-900 text-white">
+    <span class="text-xs opacity-50">81</span>
+    <span class="text-lg font-bold">Tl</span>
+    <span class="text-sm">Thallium</span>
+</div>
+<div class="element bg-blue-900 text-white">
+    <span class="text-xs opacity-50">82</span>
+    <span class="text-lg font-bold">Pb</span>
+    <span class="text-sm">Lead</span>
+</div>
+<div class="element bg-green-900 text-white">
+    <span class="text-xs opacity-50">83</span>
+    <span class="text-lg font-bold">Bi</span>
+    <span class="text-sm">Bismuth</span>
+</div>
+<div class="element bg-yellow-900 text-white">
+    <span class="text-xs opacity-50">84</span>
+    <span class="text-lg font-bold">Po</span>
+    <span class="text-sm">Polonium</span>
+</div>
+<div class="element bg-red-900 text-white">
+    <span class="text-xs opacity-50">85</span>
+    <span class="text-lg font-bold">At</span>
+    <span class="text-sm">Astatine</span>
+</div>
+<div class="element bg-blue-900 text-white">
+    <span class="text-xs opacity-50">86</span>
+    <span class="text-lg font-bold">Rn</span>
+    <span class="text-sm">Radon</span>
+</div>
+<div class="element bg-green-900 text-white">
+    <span class="text-xs opacity-50">87</span>
+    <span class="text-lg font-bold">Fr</span>
+    <span class="text-sm">Francium</span>
+</div>
+<div class="element bg-yellow-900 text-white">
+    <span class="text-xs opacity-50">88</span>
+    <span class="text-lg font-bold">Ra</span>
+    <span class="text-sm">Radium</span>
+</div>
+<div class="element bg-orange-900 text-white">
+    <span class="text-xs opacity-50">89</span>
+    <span class="text-lg font-bold">Ac</span>
+    <span class="text-sm">Actinium</span>
+</div>
+<div class="element bg-purple-900 text-white">
+    <span class="text-xs opacity-50">90</span>
+    <span class="text-lg font-bold">Th</span>
+    <span class="text-sm">Thorium</span>
+</div>
+
+<div class="element bg-teal-900">
+    <span class="text-xs opacity-50">91</span>
+    <span class="text-lg font-bold">Pa</span>
+    <span class="text-sm">Protactinium</span>
+</div>
+<div class="element bg-pink-900">
+    <span class="text-xs opacity-50">92</span>
+    <span class="text-lg font-bold">U</span>
+    <span class="text-sm">Uranium</span>
+</div>
+<div class="element bg-cyan-900">
+    <span class="text-xs opacity-50">93</span>
+    <span class="text-lg font-bold">Np</span>
+    <span class="text-sm">Neptunium</span>
+</div>
+<div class="element bg-lime-900">
+    <span class="text-xs opacity-50">94</span>
+    <span class="text-lg font-bold">Pu</span>
+    <span class="text-sm">Plutonium</span>
+</div>
+<div class="element bg-blue-500">
+    <span class="text-xs opacity-50">95</span>
+    <span class="text-lg font-bold">Cm</span>
+    <span class="text-sm">Curium</span>
+</div>
+<div class="element bg-green-500">
+    <span class="text-xs opacity-50">96</span>
+    <span class="text-lg font-bold">Bk</span>
+    <span class="text-sm">Berkelium</span>
+</div>
+<div class="element bg-yellow-500">
+    <span class="text-xs opacity-50">97</span>
+    <span class="text-lg font-bold">Cf</span>
+    <span class="text-sm">Californium</span>
+</div>
+<div class="element bg-orange-500">
+    <span class="text-xs opacity-50">98</span>
+    <span class="text-lg font-bold">Es</span>
+    <span class="text-sm">Einsteinium</span>
+</div>
+<div class="element bg-purple-500">
+    <span class="text-xs opacity-50">99</span>
+    <span class="text-lg font-bold">Fm</span>
+    <span class="text-sm">Fermium</span>
+</div>
+<div class="element bg-teal-500">
+    <span class="text-xs opacity-50">100</span>
+    <span class="text-lg font-bold">Md</span>
+    <span class="text-sm">Mendelevium</span>
+</div>
+<div class="element bg-pink-500">
+    <span class="text-xs opacity-50">101</span>
+    <span class="text-lg font-bold">No</span>
+    <span class="text-sm">Nobelium</span>
+</div>
+<div class="element bg-cyan-500">
+    <span class="text-xs opacity-50">102</span>
+    <span class="text-lg font-bold">Lr</span>
+    <span class="text-sm">Lawrencium</span>
+</div>
+<div class="element bg-lime-500">
+    <span class="text-xs opacity-50">103</span>
+    <span class="text-lg font-bold">Rf</span>
+    <span class="text-sm">Rutherfordium</span>
+</div>
+<div class="element bg-red-600">
+    <span class="text-xs opacity-50">104</span>
+    <span class="text-lg font-bold">Db</span>
+    <span class="text-sm">Dubnium</span>
+</div>
+<div class="element bg-blue-600">
+    <span class="text-xs opacity-50">105</span>
+    <span class="text-lg font-bold">Sg</span>
+    <span class="text-sm">Seaborgium</span>
+</div>
+<div class="element bg-green-600">
+    <span class="text-xs opacity-50">106</span>
+    <span class="text-lg font-bold">Bh</span>
+    <span class="text-sm">Bohrium</span>
+</div>
+<div class="element bg-yellow-600">
+    <span class="text-xs opacity-50">107</span>
+    <span class="text-lg font-bold">Hs</span>
+    <span class="text-sm">Hassium</span>
+</div>
+<div class="element bg-orange-600">
+    <span class="text-xs opacity-50">108</span>
+    <span class="text-lg font-bold">Mt</span>
+    <span class="text-sm">Meitnerium</span>
+</div>
+<div class="element bg-purple-600">
+    <span class="text-xs opacity-50">109</span>
+    <span class="text-lg font-bold">Ds</span>
+    <span class="text-sm">Darmstadtium</span>
+</div>
+<div class="element bg-teal-600">
+    <span class="text-xs opacity-50">110</span>
+    <span class="text-lg font-bold">Rg</span>
+    <span class="text-sm">Roentgenium</span>
+</div>
+<div class="element bg-pink-600">
+    <span class="text-xs opacity-50">111</span>
+    <span class="text-lg font-bold">Cn</span>
+    <span class="text-sm">Copernicium</span>
+</div>
+<div class="element bg-cyan-600">
+    <span class="text-xs opacity-50">112</span>
+    <span class="text-lg font-bold">Nh</span>
+    <span class="text-sm">Nihonium</span>
+</div>
+<div class="element bg-lime-600">
+    <span class="text-xs opacity-50">113</span>
+    <span class="text-lg font-bold">Fl</span>
+    <span class="text-sm">Flerovium</span>
+</div>
+<div class="element bg-red-700">
+    <span class="text-xs opacity-50">114</span>
+    <span class="text-lg font-bold">Mc</span>
+    <span class="text-sm">Moscovium</span>
+</div>
+<div class="element bg-blue-700">
+    <span class="text-xs opacity-50">115</span>
+    <span class="text-lg font-bold">Lv</span>
+    <span class="text-sm">Livermorium</span>
+</div>
+<div class="element bg-green-700">
+    <span class="text-xs opacity-50">116</span>
+    <span class="text-lg font-bold">Ts</span>
+    <span class="text-sm">Tennessine</span>
+</div>
+<div class="element bg-yellow-700">
+    <span class="text-xs opacity-50">117</span>
+    <span class="text-lg font-bold">Og</span>
+    <span class="text-sm">Oganesson</span>
+</div>
+<div class="element bg-orange-700">
+    <span class="text-xs opacity-50">118</span>
+    <span class="text-lg font-bold">Og</span>
+    <span class="text-sm">Oganesson</span>
+</div>
+
+ </div>
+
+</body>
+</html>

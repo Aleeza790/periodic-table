@@ -1,0 +1,432 @@
+/* General styles for the periodic table */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Style for each element block */
+.element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for element number */
+.element .text-xs {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+/* Styles for element symbol */
+.element .text-lg {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Styles for element name */
+.element .text-sm {
+    font-size: 10px;
+}
+
+/* Specific color for each element block */
+.bg-red-100 {
+    background-color: #e57373;
+}
+
+.bg-blue-100 {
+    background-color: #64b5f6;
+}
+
+.bg-green-100 {
+    background-color: #81c784;
+}
+
+.bg-yellow-100 {
+    background-color: #fff176;
+}
+
+.bg-orange-100 {
+    background-color: #ffb74d;
+}
+
+.bg-purple-100 {
+    background-color: #ba68c8;
+}
+
+.bg-teal-100 {
+    background-color: #4db6ac;
+}
+
+.bg-pink-100 {
+    background-color: #f06292;
+}
+
+.bg-cyan-100 {
+    background-color: #4dd0e1;
+}
+
+.bg-lime-100 {
+    background-color: #dce775;
+}
+
+.bg-red-200 {
+    background-color: #ef5350;
+}
+
+.bg-blue-200 {
+    background-color: #42a5f5;
+}
+
+.bg-green-200 {
+    background-color: #66bb6a;
+}
+
+.bg-yellow-200 {
+    background-color: #ffeb3b;
+}
+
+.bg-orange-200 {
+    background-color: #ff7043;
+}
+
+.bg-purple-200 {
+    background-color: #ab47bc;
+}
+
+.bg-teal-200 {
+    background-color: #26a69a;
+}
+
+.bg-pink-200 {
+    background-color: #ec407a;
+}
+
+.bg-cyan-200 {
+    background-color: #00bcd4;
+}
+
+.bg-lime-200 {
+    background-color: #cddc39;
+}
+
+.bg-red-300 {
+    background-color: #f44336;
+}
+
+.bg-blue-300 {
+    background-color: #1e88e5;
+}
+
+.bg-green-300 {
+    background-color: #43a047;
+}
+
+.bg-yellow-300 {
+    background-color: #ffeb3b;
+}
+
+.bg-orange-300 {
+    background-color: #ff9800;
+}
+
+.bg-purple-300 {
+    background-color: #9c27b0;
+}
+
+.bg-teal-300 {
+    background-color: #00897b;
+}
+
+.bg-pink-300 {
+    background-color: #d81b60;
+}
+
+.bg-cyan-300 {
+    background-color: #00acc1;
+}
+
+.bg-lime-300 {
+    background-color: #afb42b;
+}
+
+.bg-red-400 {
+    background-color: #e53935;
+}
+
+.bg-blue-400 {
+    background-color: #1976d2;
+}
+
+.bg-green-400 {
+    background-color: #388e3c;
+}
+
+.bg-yellow-400 {
+    background-color: #fbc02d;
+}
+
+.bg-orange-400 {
+    background-color: #fb8c00;
+}
+
+.bg-purple-400 {
+    background-color: #8e24aa;
+}
+
+.bg-teal-400 {
+    background-color: #00796b;
+}
+
+.bg-pink-400 {
+    background-color: #c2185b;
+}
+
+.bg-cyan-400 {
+    background-color: #00838f;
+}
+
+.bg-lime-400 {
+    background-color: #827717;
+}
+
+.bg-red-500 {
+    background-color: #d32f2f;
+}
+
+.bg-blue-500 {
+    background-color: #1976d2;
+}
+
+.bg-green-500 {
+    background-color: #388e3c;
+}
+
+.bg-yellow-500 {
+    background-color: #fbc02d;
+}
+
+.bg-orange-500 {
+    background-color: #fb8c00;
+}
+
+.bg-purple-500 {
+    background-color: #8e24aa;
+}
+
+.bg-teal-500 {
+    background-color: #00796b;
+}
+
+.bg-pink-500 {
+    background-color: #c2185b;
+}
+
+.bg-cyan-500 {
+    background-color: #00838f;
+}
+
+.bg-lime-500 {
+    background-color: #827717;
+}
+
+/* Elements 81 to 90 */
+.bg-red-900 {
+    background-color: #e57373;
+}
+
+.bg-blue-900 {
+    background-color: #64b5f6;
+}
+
+.bg-green-900 {
+    background-color: #81c784;
+}
+
+.bg-yellow-900 {
+    background-color: #fff176;
+}
+
+.bg-orange-900 {
+    background-color: #ffb74d;
+}
+
+.bg-purple-900 {
+    background-color: #ba68c8;
+}
+
+.bg-teal-900 {
+    background-color: #4db6ac;
+}
+
+.bg-pink-900 {
+    background-color: #f06292;
+}
+
+.bg-cyan-900 {
+    background-color: #4dd0e1;
+}
+
+.bg-lime-900 {
+    background-color: #dce775;
+}
+
+/* Elements 91 to 100 */
+.bg-red-1000 {
+    background-color: #f44336;
+}
+
+.bg-blue-1000 {
+    background-color: #42a5f5;
+}
+
+.bg-green-1000 {
+    background-color: #66bb6a;
+}
+
+.bg-yellow-1000 {
+    background-color: #ffeb3b;
+}
+
+.bg-orange-1000 {
+    background-color: #ff7043;
+}
+
+.bg-purple-1000 {
+    background-color: #9c27b0;
+}
+
+.bg-teal-1000 {
+    background-color: #00796b;
+}
+
+.bg-pink-1000 {
+    background-color: #c2185b;
+}
+
+.bg-cyan-1000 {
+    background-color: #00838f;
+}
+
+.bg-lime-1000 {
+    background-color: #827717;
+}
+
+/* Elements 101 to 118 (updated for correct coloring) */
+
+/* For elements 101 to 118 */
+.bg-red-600 {
+    background-color: #f44336;
+}
+
+.bg-blue-600 {
+    background-color: #1976d2;
+}
+
+.bg-green-600 {
+    background-color: #388e3c;
+}
+
+.bg-yellow-600 {
+    background-color: #fbc02d;
+}
+
+.bg-orange-600 {
+    background-color: #fb8c00;
+}
+
+.bg-purple-600 {
+    background-color: #8e24aa;
+}
+
+.bg-teal-600 {
+    background-color: #00796b;
+}
+
+.bg-pink-600 {
+    background-color: #c2185b;
+}
+
+.bg-cyan-600 {
+    background-color: #00838f;
+}
+
+.bg-lime-600 {
+    background-color: #827717;
+}
+
+.bg-red-700 {
+    background-color: #d32f2f;
+}
+
+.bg-blue-700 {
+    background-color: #1976d2;
+}
+
+.bg-green-700 {
+    background-color: #388e3c;
+}
+
+.bg-yellow-700 {
+    background-color: #fbc02d;
+}
+
+.bg-orange-700 {
+    background-color: #fb8c00;
+}
+
+.bg-purple-700 {
+    background-color: #7b1fa2;
+}
+
+.bg-teal-700 {
+    background-color: #00796b;
+}
+
+.bg-pink-700 {
+    background-color: #d81b60;
+}
+
+.bg-cyan-700 {
+    background-color: #00796b;
+}
+
+.bg-lime-700 {
+    background-color: #afb42b;
+}
+
+.bg-red-800 {
+    background-color: #e53935;
+}
+
+.bg-blue-800 {
+    background-color: #1565c0;
+}
+
+.bg-green-800 {
+    background-color: #388e3c;
+}
+
+.bg-yellow-800 {
+    background-color: #fbc02d;
+}
+
+.bg-orange-800 {
+    background-color: #fb8c00;
+}
